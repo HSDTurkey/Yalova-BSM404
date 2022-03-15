@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">YalovaUniversity_Week5</string>
+
+
+    <string name="verifyCode">Verify Code</string>
+    <string name="password">Password</string>
+    <string name="emailOrPhone">Email / Phone</string>
+    <string name="username">Full Name</string>
+    <string name="profileFullName">Full Name</string>
+    <string name="update_image">Upload Image</string>
+    <string name="update">Update</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="software_agreement">I agree to the Company Software Agreement.</string>
+    <string name="profileUserGender">Gender</string>
+    <string name="passwordSecurityLevel">Security Level</string>
+</resources>

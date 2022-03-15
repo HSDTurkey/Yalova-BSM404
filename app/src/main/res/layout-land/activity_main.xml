@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="#729EEE"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/profile" />
+
+            <Button
+                android:id="@+id/uploadProfileImage"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:minHeight="48dp"
+                android:text="@string/update_image"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/profileFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:text="@string/profileFullName"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/profileUserGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileFullName"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:text="@string/profileUserGender"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+
+            <EditText
+                android:id="@+id/profileFullNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/users"
+                android:drawablePadding="10dp"
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/profileEmailOrPhoneTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/contact"
+                android:drawablePadding="10dp"
+                android:hint="@string/emailOrPhone"
+                android:importantForAutofill="no"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/profilePasswordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:importantForAutofill="no">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/passwordSecurityLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:visibility="gone"
+                android:text="@string/passwordSecurityLevel"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/profileVerifyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/verify"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:hint="@string/verifyCode"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray">
+
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:elevation="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/agreementCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/software_agreement">
+
+            </CheckBox>
+
+            <Button
+                android:id="@+id/updateUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YalovaUniversity_Week6</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="todo">TODO</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="social_media_links">Social Media Links</string>
+    <string name="your_life_is_important_for_us">Your Life is important for us.</string>
+    <string name="please_send_your_rate">Please send your rate!</string>
+    <string name="your_rate">Your Rate:</string>
+    <string name="send">Send</string>
+    <string name="comment">Also if you want to comment, please click:</string>
+</resources>
